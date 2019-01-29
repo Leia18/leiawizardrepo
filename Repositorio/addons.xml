@@ -93,6 +93,38 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.Lilianime"
+       name="[COLOR pink]Lili anime[/COLOR]"
+       version="0.0.5"
+       provider-name="Lis">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" />
+    <import addon="plugin.video.youtube"  />
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video </provides>
+  </extension>
+
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado por Lis</summary>
+    <description>Se recomienda supervisión parental para acceder directamente a la sección infantil.Sección +16 años con escenas de desnudez fuerte y explícita, escenas fuertes,imagenes muy intensas y sangre en mucha cantidad.Addon dedicado a los  pequeñ@s y adolescentes de la familia Festa.Addon de entretenimiento y educativo, porque con Festa Kids, aprender es divertido.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.Magyck"
        name="[COLOR deepskyblue]Magyck[/COLOR]"
        version="v.99"
@@ -217,6 +249,42 @@
     <description lang="en">[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
     <disclaimer lang="en">There can only be one.</disclaimer>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Tvchopo.Kids"
+       name="[COLOR pink]Tvchopo Kids[/COLOR]"
+       version="2.0.4"
+       provider-name="Tvchopo team">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+ <extension point="xbmc.addon.repository" name="tvchoco Jose">
+        <info>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/</datadir>
+    </extension>
+
+ <extension point="xbmc.addon.metadata">
+    <summary>Tvchopo</summary>
+    <description>Dedicado a los más pequeños de la familia chopera.</description>
     <platform>all</platform>
   </extension>
 </addon>
