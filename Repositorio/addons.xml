@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.aerobic"
+       name="[COLOR pink]Aerobic[/COLOR]"
+       version="0.0.2"
+       provider-name="Juldelju">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado por Juldelju</summary>
+    <description>Addons dedicado para disfrutar haciendo ejercicio con las coreografias de aerobic/step,zumba,just dande y un poquito de relajacion.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.ajedrez"
+	name="Ajedrez"
+	version="1.0"
+	provider-name="ibernet">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Canales Youtube de ajedrez</summary>
+    <description lang="es">Canales dedicados al ajedrez .</description>
+    <platform>all</platform>
+        <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+		</assets>
+       </extension>
+</addon>
+
 <addon id="plugin.video.cristalazul"
        name="[COLOR aqua]CRISTAL AZUL[/COLOR]"
        version="0.0.4"
