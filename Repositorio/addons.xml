@@ -232,6 +232,46 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.festa"
+       name="[COLOR aqua]*[/COLOR][COLOR lime]FESTA[/COLOR][COLOR aqua]*[/COLOR]"
+       version="0.0.10"
+       provider-name="lourdes,picapau y el equipo de FESTA">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" />
+    <import addon="plugin.video.youtube"  />
+    <import addon="script.module.urlresolver" />
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video audio</provides>
+  </extension>
+
+  <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+    </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado por lourdes, picapau y el equipo de FESTA</summary>
+    <description>MUCHOS VIERNES A LAS 22:00H (HORA PENINSULAR),SACAMOS UNA NUEVA SECCION. festa 2017/18 version 0.0.10 , modificado para que sea tambien un repositorio,CONTEO DE ENTRADAS AL ADDON</description>
+    <platform>all</platform>
+	  <assets>
+		<icon>icon.gif</icon>
+		<fanart>fanart.jpg</fanart>
+	  </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.Lilianime"
        name="[COLOR pink]Lili anime[/COLOR]"
        version="0.0.5"
@@ -424,6 +464,70 @@
     <description lang="en">[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
     <disclaimer lang="en">There can only be one.</disclaimer>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="4.1.0"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV on your media center</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/tvalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvchopo"
+       name="[COLOR fuchsia]T[/COLOR][COLOR green]V[/COLOR][COLOR yellow]C[/COLOR][COLOR orange]HO[/COLOR][COLOR pink]PO[/COLOR]"
+       version="7.0"
+       provider-name="equipo-chopo">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+ <extension point="xbmc.addon.repository" name="tvchoco Jose">
+        <info>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/elchocolate/repotvchopo/master/Repositorio/</datadir>
+    </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado por equipo-chopo</summary>
+    <description>Tvchopo  es un proyecto sin ánimo de lucro, no se aceptan donativos.
+Este complemento no aloja ningún contenido en servidores propios, todos los links que comparte pueden encontrarse libremente en la red.
+No nos hacemos responsables de la  distribución del mismo por parte de terceros.</description>
     <platform>all</platform>
   </extension>
 </addon>
